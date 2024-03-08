@@ -6,7 +6,7 @@ interface CustomMessageContent {
     headerType?: number; 
 }
 
-@Command('X', {
+@Command('faq', {
     description: '',
     usage: 'faq',
     category: 'general',
