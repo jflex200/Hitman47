@@ -6,7 +6,7 @@ interface CustomMessageContent {
     headerType?: number; 
 }
 
-@Command('faq', {
+@Command('X', {
     description: '',
     usage: 'faq',
     category: 'general',
@@ -15,7 +15,7 @@ interface CustomMessageContent {
 })
 export default class command extends BaseCommand {
     override execute = async ({ from, sender, message }: Message): Promise<void> => {
-        const faqText = `*━━━❰ FAQ ❱━━━*\n\n... [Your FAQ text] ...\nᚖ ────── ✪ ────── ᚖ`;
+        const faqText = `*━━━❰ FAQ ❱━━━*\n\n... [You look for what bitch 😂] ...\nᚖ ────── ✪ ────── ᚖ`;
 
         const footerText = '© Hitman47 Inc 2024';
 
