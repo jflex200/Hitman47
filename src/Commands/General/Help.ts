@@ -18,9 +18,7 @@ export default class extends BaseCommand {
         'https://telegra.ph/file/277c60d1d94cd170cf67f.jpg',
     ]
     // you can add more pictures if you want bro of girl
-     'Support gc link 🔗'
-    'https://chat.whatsapp.com/BXFhlJljGU5ADKdTPQ9p3M'
-    
+   
     public override execute = async (M: Message, { context }: IArgs): Promise<void> => {
         if (!context) {
             let commands = Array.from(this.handler.commands, ([command, data]) => ({
