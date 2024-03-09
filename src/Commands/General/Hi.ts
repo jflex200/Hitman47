@@ -10,5 +10,5 @@ import { BaseCommand, Command, Message } from '../../Structures'
 })
 export default class extends BaseCommand {
     public override execute = async ({ sender, reply }: Message): Promise<void> =>
-        void (await reply(`Fuck you😂! *${sender.username}*`))
+        void (await reply(`Hi Human...i'mᴿ᭄𝐉𝐅𝐋𝐄𝐗's BOT! *${sender.username}*`))
 }
