@@ -17,7 +17,9 @@ export default class command extends BaseCommand {
     override execute = async ({ from, sender, message }: Message): Promise<void> => {
         const supportText = `*━━━❰ Support group❱━━━*\n\n
         *#1* *➳ᴹᴿ᭄𝐉𝐅𝐋𝐄𝐗's GROUPS*
-        [https://chat.whatsapp.com/BXFhlJljGU5ADKdTPQ9p3M] \nᚖ here Enjoy 😎 ᚖ`;
+        [https://chat.whatsapp.com/BXFhlJljGU5ADKdTPQ9p3M]
+        *#2*  *FOR MARIA BOT'S ONLY🤭🤗🤖*
+        [https://chat.whatsapp.com/HTb9vepDT0wEMnsi74TG3Y]\nᚖ here Enjoy 😎 ᚖ`;
 
         const footerText = '© Hitman47 Inc 2024';
 
