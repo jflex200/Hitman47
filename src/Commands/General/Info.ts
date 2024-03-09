@@ -11,10 +11,10 @@ import { BaseCommand, Command, Message } from '../../Structures'
 export default class extends BaseCommand {
     private imageUrls: string[] = [
         'https://telegra.ph/file/047af0c09b6a73acd74bf.jpg',
-        'https://telegra.ph/file/2ccd77897ca72ff9243b8.jpg',
-        'https://telegra.ph/file/277c60d1d94cd170cf67f.jpg',
-        'https://telegra.ph/file/b6cdb4a632e4f199df3f7.jpg',
-        'https://telegra.ph/file/2ccd77897ca72ff9243b8.jpg',
+        'https://telegra.ph/file/7479b4def83c4c676498a.jpg',
+        'https://telegra.ph/file/7479b4def83c4c676498a.jpg',
+        'https://telegra.ph/file/3e80abd28d2188dbf942b.jpg',
+        'https://telegra.ph/file/3e80abd28d2188dbf942b.jpg',
     ]
     // you can add more pictures if you want bro or girl
     public override execute = async ({ reply }: Message): Promise<void> => {
