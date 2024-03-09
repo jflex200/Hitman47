@@ -30,7 +30,7 @@ export default class extends BaseCommand {
             const image = await this.client.utils.getBuffer(randomImageUrl)
             let text = `✨! *@${M.sender.jid.split('@')[0]}*, 𝐈 𝐀𝐌 ${
                 this.client.config.name
-            }\n\n𝐌𝐲 𝐏𝐫𝐞𝐟𝐢𝐱 𝐢𝐬 - "${this.client.config.prefix}"\n\n *⛩️❯─「Lucy-Heartfilia」─❮⛩️*
+            }\n\n𝐌𝐲 𝐏𝐫𝐞𝐟𝐢𝐱 𝐢𝐬 - "${this.client.config.prefix}"\n\n *⛩️❯─「MARIA BOT 🤭 」─❮⛩️*
             1. *The usable commands are listed below*.`
             const categories: string[] = []
             for (const command of commands) {
@@ -44,8 +44,7 @@ export default class extends BaseCommand {
                 filteredCommands.forEach((command) => categoryCommands.push(command.data.name))
                 text += `\`\`\`➪${categoryCommands.join(' ● ')}\`\`\``
             }
-            text += `\n\n📕 *Note:* Use\n\n ${this.client.config.prefix}help <command_name> for more info of a specific command. Example: *${this.client.config.prefix}help hello*
-            *▄ ▅ ▆ MARIA BOT 🤭 ▆ ▅ ▄*`
+            text += `\n\n📕 *Note:* Use\n\n ${this.client.config.prefix}help <command_name> for more info of a specific command. Example: *${this.client.config.prefix}help hello*`
             return void (await M.reply(image, 'image', undefined, undefined, text, [M.sender.jid]))
         } else {
             const cmd = context.trim().toLowerCase()
