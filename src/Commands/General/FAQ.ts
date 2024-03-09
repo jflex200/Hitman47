@@ -50,7 +50,7 @@ export default class command extends BaseCommand {
 ᚖ ────── ✪ ────── ᚖ
 
 📮 *Q9:* How can I create a bot like Maria?
-📑 *A:* You can't deploy a version of Lucy thus it's not an open source project.
+📑 *A:* You can't deploy a version of *MARIA* thus it's not an open source project.
 ᚖ ────── ✪ ────── ᚖ
 
 📮 *Q10:* Is the project of *➳ᴹᴿ᭄𝐉𝐅𝐋𝐄𝐗* sponsored?
