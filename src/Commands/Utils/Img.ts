@@ -16,7 +16,7 @@ export default class extends BaseCommand {
         const term = texas[0]
         const amount = parseInt(texas[1])
         if (!amount)
-            return void M.reply(`Give me the number, Bitch!\n\nExample: *${this.client.config.prefix}image cardi B|5*`)
+            return void M.reply(`Give me the number, Bitch!\n\nExample: *${this.client.config.prefix}image JFLEX_OG |5*`)
         if (amount > 10) return void M.reply(`Do you want me to spam in this group?`)
         for (let i = 0; i < amount; i++) {
             const data = await this.client.utils.fetch<string[]>(`https://weeb-api.vercel.app/gisearch?query=${texas}`)
