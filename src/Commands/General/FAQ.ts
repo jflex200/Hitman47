@@ -15,7 +15,7 @@ interface CustomMessageContent {
 })
 export default class command extends BaseCommand {
     override execute = async ({ from, sender, message }: Message): Promise<void> => {
-        const faqText = `*━━━❰ FAQ ❱━━━*\n\n... [*━━━❰ FAQ ❱━━━*
+        const faqText = `*━━━❰ FAQ ❱━━━*\n\n... [
 
 📮 *Q1:* How do I add *MARIA BOT* in my group?
 📑 *A:* Send the group link in the bot's or owner's DM & it will join soon.
