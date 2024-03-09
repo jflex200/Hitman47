@@ -1,26 +1,30 @@
 import { BaseCommand, Command, Message } from '../../Structures'
+import { IArgs } from '../../Types'
 
-@Command('img', {
-    description: 'Converts sticker to image',
-    exp: 35,
-    category: 'utils',
-    aliases: ['toimg'],
-    usage: 'img [quote_sticker]',
-    cooldown: 25
+@Command('pinterest', {
+    description: 'Will search img from the given term.',
+    category: 'media',
+    usage: 'image',
+    aliases: ['image'],
+    exp: 15,
+    cooldown: 3
 })
-export default class command extends BaseCommand {
-    override execute = async (M: Message): Promise<void> => {
-        if (!M.quoted || (M.quoted && M.quoted.type !== 'stickerMessage'))
-            return void M.reply('*Quote the sticker that you want to convert, Baka!*')
-        const buffer = await M.downloadMediaMessage(M.quoted.message)
-        const animated = M.quoted?.message?.stickerMessage?.isAnimated as boolean
-        try {
-            const result = animated
-                ? await this.client.utils.webpToMp4(buffer)
-                : await this.client.utils.webpToPng(buffer)
-            return void (await M.reply(result, animated ? 'video' : 'image', animated))
-        } catch (error) {
-            return void (await M.reply('Conversion failed as animated stickers are not supported'))
+export default class extends BaseCommand {
+    public override execute = async (M: Message, { context }: IArgs): Promise<void> => {
+        if (!context) return void (await M.reply('Baka!! what image you wnt?'))
+        const texas = context.trim().split('|')
+        const term = texas[0]
+        const amount = parseInt(texas[1])
+        if (!amount)
+            return void M.reply(`Give me the number, Bitch!\n\nExample: *${this.client.config.prefix}image cardi B|5*`)
+        if (amount > 10) return void M.reply(`Do you want me to spam in this group?`)
+        for (let i = 0; i < amount; i++) {
+            const data = await this.client.utils.fetch<string[]>(`https://weeb-api.vercel.app/gisearch?query=${texas}`)
+            if (!data.length) return void (await M.reply('*404 Error! Found no Results*'))
+            const buffer = await this.client.utils.getBuffer(data[Math.floor(Math.random() * data.length)])
+            await M.reply(buffer, 'image').catch(() => {
+                return void M.reply('An error occurred. Try again later')
+            })
         }
     }
 }
