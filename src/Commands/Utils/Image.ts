@@ -1,7 +1,7 @@
 import { BaseCommand, Command, Message } from '../../Structures'
 import { IArgs } from '../../Types'
 
-@Command('pinterest', {
+@Command('image', {
     description: 'Will search img from the given term.',
     category: 'media',
     usage: 'image',
