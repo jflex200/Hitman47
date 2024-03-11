@@ -15,7 +15,7 @@ export default class extends BaseCommand {
         let text = ''
         text += `*➳ᴹᴿ᭄𝐉𝐅𝐋𝐄𝐗_OG* ✨\n\n`
         text += `*fork and give a star 🌟 so you can get more updates* \n\n`
-        text += `⚙️ *Repo Link: https://github.com/marry2001/Hitman47*`
+        text += `⚙️ *Repo Link:https://github.com/Dkhitman3/Hitman47*`
         return void (await M.reply(image, 'image', undefined, undefined, text))
     }
 }
