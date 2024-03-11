@@ -7,6 +7,8 @@ import { BaseCommand, Command, Message } from '../../Structures'
     cooldown: 3,
     adminRequired: true,
     exp: 10,
+    aliases: ['!oh']
+})
     
 })
 export default class command extends BaseCommand {
