@@ -1,13 +1,12 @@
 import { BaseCommand, Command, Message } from '../../Structures'
 
-@Command('remove', {
+@Command('!oh', {
     description: 'it will remove people like dk',
     category: 'moderation',
     usage: 'oh',
     cooldown: 3,
     adminRequired: true,
     exp: 10,
-    aliases: ['!oh']
 })
     
 })
