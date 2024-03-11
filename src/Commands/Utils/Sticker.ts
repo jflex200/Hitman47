@@ -92,4 +92,4 @@ export default class extends BaseCommand {
         if (categories.length < 1) categories.push('✨', '💗')
         return categories
     }
-}
+                }
