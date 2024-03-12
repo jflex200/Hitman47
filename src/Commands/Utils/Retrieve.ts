@@ -12,7 +12,7 @@ export default class extends BaseCommand {
         if (!M.quoted || M.quoted.type !== 'viewOnceMessageV2')
             return void M.reply('Quote a view once message to retrieve, Baka!')
         const buffer = await M.downloadMediaMessage(M.quoted.message)
-        const type = Object.keys(M.quoted.message.viewOnceMessage?.message || {})[0].replace('Message', '') as
+        const type = Object.keys(M.quoted.message.viewOnceMessage?V2.message || {})[0].replace('Message', '') as
             | 'image'
             | 'video'
         return void (await M.reply(buffer, type))
