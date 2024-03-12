@@ -4,7 +4,7 @@ import { BaseCommand, Command, Message } from '../../Structures'
     description: 'it will remove people like dk',
     aliases: ['oh'],
     category: 'moderation',
-    usage: 'oh',
+    usage: 'remove',
     cooldown: 3,
     adminRequired: true,
     exp: 10,
