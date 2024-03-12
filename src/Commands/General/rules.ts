@@ -13,14 +13,9 @@ interface CustomMessageContent {
     exp: 10,
     cooldown: 10
 })
-export default class extends BaseCommand {
-    private imageUrls: string[] = [
-       'https://telegra.ph/file/5a901318561a66d1d11c9.mp4'
-
 export default class command extends BaseCommand {
     override execute = async ({ from, sender, message }: Message): Promise<void> => {
         const faqText = `_*─☞☛✰✬★✰──🎀𝚁𝚞𝚕𝚎𝚜⌉ 🎀──✾✵✫✯☚☜──*_\n\n
-
 
 ☟☟☟☟
 
@@ -45,6 +40,7 @@ export default class command extends BaseCommand {
  3.𝖠𝗏𝗈𝗂𝖽 𝖼𝗁𝖺𝗍𝗍𝗂𝗇𝗀 𝗍𝗁𝖾 𝖻𝗈𝗍 𝗂𝗇 𝗉𝖾𝗋𝗌𝗈𝗇𝖺𝗅 𝗆𝖾𝗌𝗌𝖺𝗀𝖾, 𝖮𝖭𝖫𝖸 𝗀𝗋𝗈𝗎𝗉 𝗅𝗂𝗇𝗄𝗌 𝖺𝗅𝗅𝗈𝗐𝖾𝖽.(𝖡𝗅𝗈𝖼𝗄)
 
  4.𝖴𝗌𝖾 #𝗌𝗎𝗉𝗉𝗈𝗋𝗍
+
 \nᚖ ────── ✪ ────── ᚖ`;
 
         const footerText = '© Hitman47 Inc 2024';
