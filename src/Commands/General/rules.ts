@@ -13,6 +13,10 @@ interface CustomMessageContent {
     exp: 10,
     cooldown: 10
 })
+export default class extends BaseCommand {
+    private imageUrls: string[] = [
+       'https://telegra.ph/file/5a901318561a66d1d11c9.mp4'
+
 export default class command extends BaseCommand {
     override execute = async ({ from, sender, message }: Message): Promise<void> => {
         const faqText = `_*─☞☛✰✬★✰──🎀𝚁𝚞𝚕𝚎𝚜⌉ 🎀──✾✵✫✯☚☜──*_\n\n
