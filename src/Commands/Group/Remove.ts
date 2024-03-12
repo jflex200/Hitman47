@@ -1,6 +1,6 @@
 import { BaseCommand, Command, Message } from '../../Structures'
 
-@Command('oh', {
+@Command('remove', {
     description: 'it will remove people like dk',
     category: 'moderation',
     usage: 'oh',
