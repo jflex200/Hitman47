@@ -61,7 +61,7 @@ export class MessageHandler {
         const { bot } = await this.client.DB.getGroup(M.from)
         const commands = ['switch', 'hello', 'hi']
         const { banned, tag } = await this.client.DB.getUser(M.sender.jid)
-        if (banned) return void M.reply('You are banned from using commands')
+        if (banned) return void M.reply('You bitch🤭 are banned from using commands')
         if (!tag)
             await this.client.DB.updateUser(M.sender.jid, 'tag', 'set', this.client.utils.generateRandomUniqueTag())
         const cmd = args[0].toLowerCase().slice(prefix.length)
