@@ -31,7 +31,8 @@ export default class extends BaseCommand {
             let text = `✨! *@${M.sender.jid.split('@')[0]}*, 𝐈 𝐀𝐌 ${
                 this.client.config.name
             }\n\n𝐌𝐲 𝐏𝐫𝐞𝐟𝐢𝐱 𝐢𝐬 - "${this.client.config.prefix}"\n\n *⛩️❯─「MARIA BOT 🤭 」─❮⛩️*
-            1. *The usable commands are listed below*.`
+            1. *The usable commands are listed below*.
+            2. *Dont DM the Bot*.`
             const categories: string[] = []
             for (const command of commands) {
                 if (categories.includes(command.data.config.category)) continue
