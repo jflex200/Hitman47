@@ -66,7 +66,7 @@ export class MessageHandler {
             await this.client.DB.updateUser(M.sender.jid, 'tag', 'set', this.client.utils.generateRandomUniqueTag())
         const cmd = args[0].toLowerCase().slice(prefix.length)
         const command = this.commands.get(cmd) || this.aliases.get(cmd)
-        if (!command) return void M.reply('
+        if (!command) return void M.reply(
         export default class extends BaseCommand {
     private imageUrls: string[] = [
         'https://telegra.ph/file/277c60d1d94cd170cf67f.jpg',
