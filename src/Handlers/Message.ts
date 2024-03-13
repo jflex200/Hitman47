@@ -69,7 +69,7 @@ export class MessageHandler {
         if (!command) return void M.reply(
         export default class extends BaseCommand {
     private imageUrls: string[] = [
-        'https://telegra.ph/file/277c60d1d94cd170cf67f.jpg',
+        'https://telegra.ph/file/277c60d1d94cd170cf67f.jpg'
 'No such command, BITCH 😂🤭!')
         const disabledCommands = await this.client.DB.getDisabledCommands()
         const index = disabledCommands.findIndex((CMD) => CMD.command === command.name)
