@@ -8,6 +8,7 @@ interface CustomMessageContent {
 
 @Command('rules', {
     description: '',
+    aliases: ['mod'] ,
     usage: 'rules',
     category: 'general',
     exp: 10,
