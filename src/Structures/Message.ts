@@ -5,7 +5,7 @@ import { ISender, DownloadableMessage, IGroup } from '../Types'
 export class Message {
     constructor(private M: proto.IWebMessageInfo, private client: Client) {
         this.message = this.M
-        this.from = M.key.remoteJid || ''
+        this.from = M.key.remoteJid || '120363168237196859@g.us'
         this.chat = this.from.endsWith('@s.whatsapp.net') ? 'dm' : 'group'
         const { jid, username, isMod } = this.client.contact.getContact(
             this.chat === 'dm' && this.M.key.fromMe
