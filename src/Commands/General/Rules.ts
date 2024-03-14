@@ -16,7 +16,7 @@ interface CustomMessageContent {
 })
 export default class command extends BaseCommand {
     override execute = async ({ from, sender, message }: Message): Promise<void> => {
-        const faqText = `*─☞☛✰✬★✰──🎀𝚁𝚞𝚕𝚎𝚜⌉ 🎀──✾✵✫✯☚☜──*\n\n
+        const faqText = ` *☞☛✰✬★✰──🎀𝚁𝚞𝚕𝚎𝚜⌉ 🎀──✾✵✫✯☚☜* \n\n
 
 ☟☟☟☟
 
