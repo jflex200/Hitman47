@@ -16,7 +16,7 @@ interface CustomMessageContent {
 export default class command extends BaseCommand {
     override execute = async ({ from, sender, message }: Message): Promise<void> => {
         const supportText = `*━━━❰ 𝐒𝐔𝐏𝐏𝐎𝐑𝐓 𝐆𝐂𝐒 ❱━━━*\n\n
-        *#1* *➳ᴹᴿ᭄𝐉𝐅𝐋𝐄𝐗's GROUPS*
+        *#1* *➳ᴹᴿ᭄𝐉𝐅𝐋𝐄𝐗'𝐒 𝐆𝐂*
         [https://chat.whatsapp.com/BXFhlJljGU5ADKdTPQ9p3M]
        
         *#2*  *FOR MARIA BOT'S ONLY🤭🤗🤖*
