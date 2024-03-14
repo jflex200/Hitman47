@@ -1,0 +1,31 @@
+import { BaseCommand, Command, Message } from '../../Structures';
+import { proto } from '@whiskeysockets/baileys';
+
+@Command('bot', {
+    description: 'shows all H47 bots.',
+    category: 'general',
+    usage: 'bot',
+    aliases: ['bot'],
+    exp: 20,
+    cooldown: 3
+})
+export default class command extends BaseCommand {
+    override execute = async (M: Message): Promise<void> => {
+        const botUsername = this.client.config.name;
+        const userId = this.client.user?.id;
+
+        if (userId) {
+            const botData = [{ sessionId: botUsername, number: this.client.correctJid(userId), active: true }];
+
+            const formattedBotData = botData.reduce((acc, bot) => {
+                const status = bot.active ? 'Active 🟩' : 'Inactive 🟥';
+                acc += `\n\n🔰 *Name: ${bot.sessionId}*\n🧧 *Number: ${bot.number}*\n🔵 *Status: ${status}*`;
+                return acc;
+            }, '*🏮 𝐌𝐀𝐑𝐈𝐀-𝐁𝐎𝐓 🤭 🏮*');
+
+            await M.reply(formattedBotData);
+        } else {
+            await M.reply('Unable to fetch bot data: user ID is undefined.');
+        }
+    }
+                    }
