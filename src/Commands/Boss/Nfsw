@@ -5,7 +5,7 @@ import { BaseCommand, Command, Message } from '../../Structures'
     category: 'nsfw',
     usage: 'loli',
     exp: 20,
-    cooldown: 6
+    cooldown: 5
 })
 export default class extends BaseCommand {
     public override execute = async (M: Message): Promise<void> => {
