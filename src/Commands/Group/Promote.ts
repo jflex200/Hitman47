@@ -2,6 +2,7 @@ import { BaseCommand, Command, Message } from '../../Structures'
 
 @Command('promote', {
     description: '',
+    aliases: ['ok'],
     category: 'moderation',
     usage: 'promote',
     exp: 10,

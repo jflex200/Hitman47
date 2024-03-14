@@ -28,7 +28,7 @@ export default class extends BaseCommand {
         const pack = context.split('|')
         const sticker = new Sticker(buffer, {
             categories,
-            pack: pack[1] ? pack[1].trim() : '🤍 Made for you',
+            pack: pack[1] ? pack[1].trim() : 'MARIA🤭 Made for you',
             author: pack[2] ? pack[2].trim() : `${this.client.config.name} 🖤`,
             quality,
             type:
@@ -92,4 +92,4 @@ export default class extends BaseCommand {
         if (categories.length < 1) categories.push('✨', '💗')
         return categories
     }
-}
+                }
