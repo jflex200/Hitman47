@@ -1,4 +1,4 @@
-Pimport { join } from 'path'
+import { join } from 'path'
 import { BaseCommand, Command, Message } from '../../Structures'
 
 @Command('info', {
