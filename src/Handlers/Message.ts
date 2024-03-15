@@ -61,7 +61,8 @@ export class MessageHandler {
         const { bot } = await this.client.DB.getGroup(M.from)
         const commands = ['switch', 'hello', 'hi']
         const { banned, tag } = await this.client.DB.getUser(M.sender.jid)
-        if (banned) return void M.reply('You bitch🤭 are banned from using commands')
+                     const image = await this.client.utils.getBuffer('https://telegra.ph/file/bdd281b87aaa6f4ee0a67.jpg) 
+        if (banned) return void M.reply(You bitch🤭 are banned from using commands')
         if (!tag)
             await this.client.DB.updateUser(M.sender.jid, 'tag', 'set', this.client.utils.generateRandomUniqueTag())
         const cmd = args[0].toLowerCase().slice(prefix.length)
