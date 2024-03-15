@@ -34,7 +34,7 @@ export default class extends BaseCommand {
         const image = await this.client.utils.getBuffer(randomImageUrl)
         const uptime = this.client.utils.formatSeconds(process.uptime())
         const text = `*🍁 ${this.client.config.name} 🍁*\n\n📙 *Description: ${description}*\n\n🔗 *Commands:* ${this.handler.commands.size}\n🚦 *Uptime:* ${uptime}\n🎐 *Users:* ${users}\n🌃 *Mods:* ${this.client.config.mods.length}\n🔮 *Groups:* ${groups.length}
-     TYPE *{BOT PREFIX}faq to get more information about *𝐌𝐀𝐑𝐈𝐀-𝐁𝐎𝐓 🤭*
+     TYPE *{BOT PREFIX}faq* to get more information about *𝐌𝐀𝐑𝐈𝐀-𝐁𝐎𝐓 🤭*
    *©𝐌𝐀𝐑𝐈𝐀-𝐁𝐎𝐓 🤭 Inc*`
         return void (await reply(image, 'image', undefined, undefined, text, undefined, {
             title: this.client.utils.capitalize(name),
