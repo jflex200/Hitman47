@@ -23,6 +23,6 @@ export default class command extends BaseCommand {
         }
         await this.client.DB.setGold(M.sender.jid, 15000)
         await this.client.DB.user.updateOne({ jid: M.sender.jid }, { $set: { lastDaily: Date.now() } })
-        return void (await M.reply('*You have claimed Your Daily 150000🤩 Gold* Check your wallet'))
+        return void (await M.reply('*You have claimed Your Daily 100,500,000,000🤩 Gold* Check your wallet'))
     }
 }
