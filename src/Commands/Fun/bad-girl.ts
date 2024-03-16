@@ -22,7 +22,8 @@ export default class extends BaseCommand {
 'https://telegra.ph/file/e6d6dbdb0ece4c8440ff2.jpg',
 'https://telegra.ph/file/4b506d1ecf7aee62ac028.jpg',
 'https://telegra.ph/file/120ce7c0226d3470918b7.jpg',
-'https://telegra.ph/file/ddf9dc486c67d07a98413.jpg',)
+'https://telegra.ph/file/ddf9dc486c67d07a98413.jpg',
+)
 
         let text = ''
         text += `*i love you 🥺 * ✨\n\n`
