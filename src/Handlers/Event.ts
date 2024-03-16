@@ -44,9 +44,9 @@ export class EventHandler {
                       .map((jid) => `@${jid.split('@')[0]}`)
                       .join(' ')}*`
                 : event.action === 'remove'
-                ? `Goodbye *${event.participants
+                ? `*_Take care *${event.participants
                       .map((jid) => `@${jid.split('@')[0]}`)
-                      .join(', ')}* 👋🏻, It's been nice meeting you but we're probably not gonna miss you.`
+                      .join(', ')}* 👋🏻, Until we meet again!. 👀🥹😹_* `
                 : event.action === 'demote'
                 ? `Ara Ara, looks like *@${
                       event.participants[0].split('@')[0]
