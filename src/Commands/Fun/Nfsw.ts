@@ -10,12 +10,12 @@ import { BaseCommand, Command, Message } from '../../Structures'
 })
 export default class extends BaseCommand {
     public override execute = async (M: Message): Promise<void> => {
-        const image = await this.client.utils.getBuffer('https://telegra.ph/file/bdd281b87aaa6f4ee0a67.jpg')
+        const image = await this.client.utils.getBuffer('https://telegra.ph/file/6789bc72269086d4a5efc.mp4',)
 
         let text = ''
-        text += `*Hitman47* ✨\n\n`
-        text += `*i miss ur DICK🤭* \n\n`
-        text += `❌ *i need fuck boy 🥵😍🤤*`
+        text += `*YOU BITCH* ✨\n\n`
+        text += `*ANSWER ME🤭* \n\n`
+        text += `Nudes will kill You 😂😂😂`
         return void (await M.reply(image, 'image', undefined, undefined, text))
     }
 }
